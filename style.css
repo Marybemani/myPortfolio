@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+body {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; }
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end; }
+  header .far {
+    display: block;
+    margin: 16px 24px;
+    user-select: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #657480; }
+
+main {
+  max-width: 1440px;
+  padding: 0 8%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3d7d4; }
+  main .intro-port {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    main .intro-port .img-wrapper {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid #c66869; }
+      main .intro-port .img-wrapper > img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: contain;
+        background-color: white; }
+    main .intro-port .des-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      main .intro-port .des-wrapper > h1 {
+        font-size: 1.2rem; }
+      main .intro-port .des-wrapper > h3 {
+        font-size: 0.8rem;
+        color: #657480;
+        margin-bottom: 8px; }
+      main .intro-port .des-wrapper > h4 {
+        font-size: 1.2rem;
+        margin-bottom: 8px; }
+      main .intro-port .des-wrapper .social {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        main .intro-port .des-wrapper .social > a {
+          display: inline-block;
+          margin-right: 16px;
+          font-size: 1.2rem; }
+        main .intro-port .des-wrapper .social > a:last-of-type {
+          margin-right: 0; }
+      main .intro-port .des-wrapper .social-email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px; }
+        main .intro-port .des-wrapper .social-email > a {
+          margin-right: 16px;
+          font-size: 1.2rem; }
+        main .intro-port .des-wrapper .social-email .email {
+          display: inline-block;
+          font-size: 0.8rem;
+          color: #657480;
+          margin-left: 4px;
+          font-weight: bold; }
+  main .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    main .details .about {
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 8px; }
+      main .details .about > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        main .details .about > div > p {
+          font-weight: bold; }
+      main .details .about .personal {
+        display: flex;
+        color: #657480;
+        font-size: 0.9rem; }
+  main .tabs {
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    main .tabs .tab-header {
+      width: 300px;
+      height: 60px;
+      border-radius: 10px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      background-color: #c66869; }
+      main .tabs .tab-header > div {
+        width: 140px;
+        margin-right: 12px;
+        padding: 24px;
+        height: 100%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+        cursor: pointer; }
+      main .tabs .tab-header > div:last-of-type {
+        margin-right: 0px; }
+      main .tabs .tab-header > div:hover {
+        background-color: white; }
+    main .tabs .tab-content {
+      padding: 32px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      main .tabs .tab-content .projects-gallery {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        main .tabs .tab-content .projects-gallery .projects {
+          width: 47%;
+          height: 220px;
+          border-radius: 10px;
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+          margin-bottom: 32px; }
+          main .tabs .tab-content .projects-gallery .projects:hover .project-detail {
+            bottom: 0; }
+          main .tabs .tab-content .projects-gallery .projects .project-detail {
+            width: 100%;
+            height: 100%;
+            padding: 16px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            background: linear-gradient(180deg, rgba(78, 104, 126, 0.3) 0%, #080a0d 95%);
+            color: white;
+            position: absolute;
+            left: 0;
+            bottom: -250px;
+            transition: 0.4s; }
+            main .tabs .tab-content .projects-gallery .projects .project-detail > a {
+              display: inline-block;
+              color: white;
+              width: 40px;
+              height: 40px;
+              border-radius: 5px;
+              background-color: #ef476f;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.2rem; }
+          main .tabs .tab-content .projects-gallery .projects .project-pic1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0; }
+      main .tabs .tab-content .tab-skills {
+        padding: 0px 32px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; }
+        main .tabs .tab-content .tab-skills .header-skills {
+          text-align: center;
+          width: 100%;
+          font-size: 1.6rem; }
+        main .tabs .tab-content .tab-skills .content-details {
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-top: 16px; }
+          main .tabs .tab-content .tab-skills .content-details .skill-details {
+            font-size: 1.2rem; }
+          main .tabs .tab-content .tab-skills .content-details .number-details {
+            color: #657480;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: 16px; }
+          main .tabs .tab-content .tab-skills .content-details > div {
+            margin-bottom: 16px;
+            width: 50%; }
+            main .tabs .tab-content .tab-skills .content-details > div .check-skills {
+              display: inline-block;
+              font-size: 0.8rem;
+              color: #657480; }
+  main .tab-header-active {
+    background-color: white; }
+
+.dark {
+  background-color: #22272b; }
+
+.dark-mode {
+  color: #c66869; }
+
+.dark-text {
+  color: white; }
+
+.dark-icon {
+  color: #DB9F95; }
+
+@media screen and (max-width: 1024px) {
+  main .intro-port {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    main .intro-port .img-wrapper {
+      width: 220px;
+      height: 220px; }
+      main .intro-port .img-wrapper > img {
+        width: 200px;
+        height: 200px; }
+    main .intro-port .des-wrapper > h1 {
+      font-size: 2.1rem; }
+    main .intro-port .des-wrapper > h3 {
+      font-size: 1.5rem; }
+    main .intro-port .des-wrapper > h4 {
+      font-size: 1.8rem; }
+    main .intro-port .des-wrapper .social > a {
+      font-size: 1.6rem; }
+    main .intro-port .des-wrapper .social-email .email {
+      font-size: 1.1rem; }
+    main .intro-port .des-wrapper .social-email > a {
+      font-size: 1.6rem; }
+  main .details .about {
+    margin-top: 24px;
+    margin-bottom: 10px; }
+    main .details .about > h3 {
+      font-size: 1.5rem; }
+    main .details .about > div > p {
+      font-size: 1.4rem;
+      margin-bottom: 8px; }
+    main .details .about .personal {
+      font-size: 1.3rem; }
+  main .tabs .tab-header {
+    width: 400px;
+    height: 70px; }
+    main .tabs .tab-header > div {
+      width: 50%;
+      font-size: 1.5rem; }
+  main .tabs .tab-content .projects-gallery {
+    width: 80%; }
+    main .tabs .tab-content .projects-gallery .projects {
+      width: 100%;
+      height: 240px; }
+      main .tabs .tab-content .projects-gallery .projects .project-detail {
+        bottom: -300px; }
+        main .tabs .tab-content .projects-gallery .projects .project-detail > a {
+          width: 40px;
+          height: 40px;
+          font-size: 1.4rem; }
+  main .tabs .tab-content .tab-skills {
+    width: 100%;
+    padding: 0px; }
+    main .tabs .tab-content .tab-skills .header-skills {
+      font-size: 1.5rem; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 35%;
+      margin-top: 32px; }
+      main .tabs .tab-content .tab-skills .content-details .title-details {
+        font-size: 1.5rem; }
+      main .tabs .tab-content .tab-skills .content-details .number-details {
+        font-size: 1.3rem; }
+      main .tabs .tab-content .tab-skills .content-details > div {
+        margin-right: 16px;
+        width: 30%; }
+        main .tabs .tab-content .tab-skills .content-details > div .check-skills {
+          font-size: 1.2rem; }
+
+  header .far {
+    display: none; } }
+@media screen and (max-width: 960px) {
+  main .tabs .tab-content .projects-gallery {
+    width: 80%; }
+    main .tabs .tab-content .projects-gallery .projects {
+      width: 95%;
+      height: 200px; }
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 50%; }
+      main .tabs .tab-content .tab-skills .content-details > div {
+        margin-right: 16px;
+        width: 35%; } }
+@media screen and (max-width: 914px) {
+  main .tabs .tab-content .projects-gallery {
+    width: 80%; }
+    main .tabs .tab-content .projects-gallery .projects {
+      width: 95%;
+      height: 200px; }
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 60%; } }
+@media screen and (max-width: 776px) {
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details > div {
+      margin-right: 16px;
+      width: 40%; } }
+@media screen and (max-width: 687px) {
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 70%; }
+      main .tabs .tab-content .tab-skills .content-details > div {
+        width: 40%; } }
+@media screen and (max-width: 658px) {
+  main {
+    padding: 0px; }
+    main .tabs .tab-content .projects-gallery {
+      width: 90%; }
+      main .tabs .tab-content .projects-gallery .projects {
+        width: 100%;
+        height: 200px; } }
+@media screen and (max-width: 547px) {
+  main .tabs .tab-content .projects-gallery {
+    width: 100%; }
+    main .tabs .tab-content .projects-gallery .projects {
+      width: 100%;
+      height: 200px; } }
+@media screen and (max-width: 504px) {
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 80%; }
+      main .tabs .tab-content .tab-skills .content-details > div {
+        width: 40%; } }
+@media screen and (max-width: 471px) {
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 90%; }
+      main .tabs .tab-content .tab-skills .content-details > div {
+        width: 40%; } }
+@media screen and (max-width: 454px) {
+  main .tabs .tab-content .tab-skills .content-details {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details > div {
+      width: 40%; } }
+@media screen and (max-width: 443px) {
+  main .tabs .tab-content .tab-skills {
+    width: 100%; }
+    main .tabs .tab-content .tab-skills .content-details {
+      width: 50%; }
+      main .tabs .tab-content .tab-skills .content-details > div {
+        width: 100%; } }
+@media screen and (max-width: 425px) {
+  main .intro-port .img-wrapper {
+    width: 180px;
+    height: 180px; }
+    main .intro-port .img-wrapper > img {
+      width: 160px;
+      height: 160px; } }
+@media screen and (max-width: 392px) {
+  main .tabs .tab-header {
+    width: 300px;
+    height: 50px; }
+    main .tabs .tab-header > div {
+      width: 50%;
+      font-size: 1.5rem; } }
+@media screen and (max-width: 375px) {
+  main {
+    padding: 0px 8px; }
+    main .des-wrapper > h1 {
+      font-size: 1.5rem; }
+    main .tabs .tab-header {
+      width: 280px; }
+    main .tabs .tab-content .projects-gallery {
+      width: 100%; }
+      main .tabs .tab-content .projects-gallery .projects {
+        width: 100%;
+        height: 180px; }
+    main .tabs .tab-content .tab-skills .header-skills {
+      font-size: 1.5rem; } }
+@media screen and (max-width: 345px) {
+  main .tabs .tab-header {
+    width: 300px;
+    height: 50px; }
+    main .tabs .tab-header .content-details {
+      width: 70%; } }
+@media screen and (max-width: 320px) {
+  main {
+    padding-top: 32px; }
+    main .intro-port .des-wrapper > h1 {
+      font-size: 1.5rem; }
+    main .intro-port .des-wrapper > h3 {
+      font-size: 1.2rem; }
+    main .intro-port .des-wrapper > h4 {
+      font-size: 1.4rem; }
+    main .intro-port .des-wrapper .social > a {
+      font-size: 1rem; }
+    main .intro-port .des-wrapper .social-email .email {
+      font-size: 0.9rem; }
+    main .intro-port .des-wrapper .social-email > a {
+      font-size: 1rem; }
+    main .details .about > h3 {
+      font-size: 1.2rem; }
+    main .details .about > div > p {
+      font-size: 1.2rem; }
+    main .details .about .personal {
+      font-size: 1rem; }
+    main .tabs .tab-header {
+      width: 200px;
+      height: 50px; }
+      main .tabs .tab-header > div {
+        width: 50%;
+        font-size: 1rem; }
+    main .tabs .tab-content .projects-gallery {
+      width: 100%; }
+      main .tabs .tab-content .projects-gallery .projects {
+        width: 100%;
+        height: 140px; }
+        main .tabs .tab-content .projects-gallery .projects .project-detail > a {
+          width: 30px;
+          height: 30px;
+          font-size: 1rem; }
+    main .tabs .tab-content .tab-skills .header-skills {
+      font-size: 1.3rem; }
+    main .tabs .tab-content .tab-skills .content-details .title-details {
+      font-size: 1.3rem; }
+    main .tabs .tab-content .tab-skills .content-details .number-details {
+      font-size: 1rem; }
+    main .tabs .tab-content .tab-skills .content-details > div .check-skills {
+      font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
